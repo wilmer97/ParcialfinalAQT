@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Bicicletas Registradas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">Lista de Bicicletas Registradas</h2>
+    <div class="text-right mb-3">
+        <a href="formRegistroBicicleta.html" class="btn btn-success">Agregar Bicicleta</a>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Color</th>
+            <th>Estado</th>
+            <th>Fecha de Ingreso</th>
+            <th>Hora de Salida</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Fila vacía, sin registros -->
+        <tr>
+            <td colspan="9" class="text-center">No hay bicicletas registradas</td>
+        </tr>
+        <!-- Fila de ejemplo con botones de Editar y Eliminar -->
+        <tr>
+
+            <td>
+                <a href="#" class="btn btn-warning btn-sm">Editar</a>
+                <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+

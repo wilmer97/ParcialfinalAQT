@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Bicicletas</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+  <h2 class="text-center">Registro de Bicicletas</h2>
+  <form id="formRegistroBicicleta" action="/api/bicicletas" method="POST">
+    <div class="form-group">
+      <label for="marca">Marca</label>
+      <input type="text" class="form-control" id="marca" name="marca" required>
+    </div>
+    <div class="form-group">
+      <label for="modelo">Modelo</label>
+      <input type="text" class="form-control" id="modelo" name="modelo" required>
+    </div>
+    <div class="form-group">
+      <label for="anio">Año</label>
+      <input type="date" class="form-control" id="anio" name="anio" required>
+    </div>
+    <div class="form-group">
+      <label for="color">Color</label>
+      <input type="text" class="form-control" id="color" name="color" required>
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" class="form-control" id="estado" name="estado" required>
+    </div>
+    <div class="form-group">
+      <label for="fechaIngreso">Fecha de Ingreso</label>
+      <input type="date" class="form-control" id="fechaIngreso" name="fechaIngreso" required>
+    </div>
+    <div class="form-group">
+      <label for="horaSalida">Hora de Salida</label>
+      <input type="time" class="form-control" id="horaSalida" name="horaSalida">
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar Bicicleta</button>
+  </form>
+</div>
+</body>
+</html>
